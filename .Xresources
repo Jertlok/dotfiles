@@ -1,0 +1,12 @@
+! ----------------
+! IMPORTS
+! ----------------
+
+! System configuration
+#include ".Xresources.d/generic"
+
+! System theme
+#include ".Xresources.d/colors/gruvbox-dark"
+
+! Terminal configuration
+#include ".Xresources.d/terminal/urxvt"

@@ -1,0 +1,11 @@
+! ----------------------
+! Generic configurations
+! ----------------------
+
+!! Display configuration
+Xft.lcdfilter: lcddefault
+Xft.hinting: 1
+Xft.hintstyle: hintslight
+Xft.autohint: 0
+Xft.rgba: rgb
+Xft.antialias: 1

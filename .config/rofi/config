@@ -1,0 +1,14 @@
+rofi.padding: 64
+rofi.font: Roboto Mono 18
+rofi.bw: 4
+
+rofi.lines: 5
+rofi.width: 32
+
+! State:           ´bg´,     ´fg´,     ´bgalt´,  ´hlbg´,   ´hlfg´
+rofi.color-normal: #1d2021,  #fbf1c7,  #1d2021,  #fbf1c7,  #1d2021
+rofi.color-urgent: #1d2021,  #fbf1c7,  #1d2021,  #fbf1c7,  #1d2021
+rofi.color-active: #1d2021,  #fbf1c7,  #1d2021,  #fbf1c7,  #1d2021
+
+!                  ´background´,  ´border´,  ´separator´
+rofi.color-window:  #1d2021,       #fbf1c7,   #1d2021

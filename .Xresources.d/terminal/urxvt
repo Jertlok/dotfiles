@@ -1,0 +1,36 @@
+! --------------------
+! URxvt configurations
+! --------------------
+
+!! Generics
+
+URxvt*termName: rxvt-256color
+URxvt.urgentOnBell: true
+URxvt.cursorBlink: true
+URxvt.transparent: false
+URxvt.shading: 20
+URxvt.scrollBar: false
+URxvt.saveLines: 16384
+URxvt.mouseWheelScrollPage: false
+
+! Needs to be disabled for C-S keybindings to work
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+! Paste from keyboard
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+
+!! Beautify terminal
+
+! Fonts
+URxvt.font:         xft:Hack:pixelsize=13,xft:Symbola
+URxvt.boldFont:     xft:Hack:pixelsize=13:bold,xft:Symbola
+URxvt.italicFont:   xft:Hack:pixelsize=13:italic,xft:Symbola
+
+! Borderless mode
+URxvt.borderless: true
+URxvt.geometry: 120x40
+
+! Hide cursor while typing
+URxvt*pointerBlank: true
