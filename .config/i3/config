@@ -203,31 +203,16 @@ bindsym $mod+Shift+0 move container to workspace $workspace10
 
 # Assign windows to different workspaces
 assign [class="URxvt"] $workspace2
-# assign [class="Chromium"] $workspace3
 assign [class="Firefox"] $workspace3
-# assign [class="Spotify"] $workspace6
-# assign [class="Vlc"] $workspace4
-# assign [class="mpv"] $workspace4
-# assign [class="feh"] $workspace4
+assign [class="Vlc"] $workspace4
+assign [class="feh"] $workspace4
 assign [class="Inkscape"] $workspace4
-# assign [class="Evince"] $workspace4
-# assign [class="Slack"] $workspace4
 assign [class="Subl3"] $workspace1
-# assign [class="Atom"] $workspace1
-# assign [class="sublime_text"] $workspace1
-# assign [class="Telegram"] $workspace4
-# assign [class="Discord"] $workspace4
-# assign [class="Steam"] $workspace5
-# assign [class="Zathura"] $workspace7
-# assign [class="Thunar"] $workspace7
-# assign [class="st"] $workspace2
+assign [class="Telegram"] $workspace4
+assign [class="Discord"] $workspace4
 
 # If window with particular class is in another workspace, switch to it immediately
-# for_window [class="URxvt"] focus
-# for_window [class="st"] focus
-# for_window [class="Chromium"] focus
-# for_window [class="Firefox"] focus
-# for_window [class="mpv"] focus
-# for_window [class="Vlc"] focus
-# for_window [class="Evince"] focus
-# for_window [class="feh"] focus
+for_window [class="URxvt"] focus
+for_window [class="Firefox"] focus
+for_window [class="Vlc"] focus
+for_window [class="feh"] focus

@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/mnt/nvme/twrp/device/google/wahoo/recovery'
+let g:netrw_dirhist_2='/mnt/nvme/twrp/device/google/wahoo/recovery/root'
+let g:netrw_dirhist_3='/mnt/nvme/twrp/device/google/wahoo/recovery/root/system'
+let g:netrw_dirhist_4='/mnt/nvme/twrp/device/google/wahoo/recovery/root/system/etc'
+let g:netrw_dirhist_5='/mnt/nvme/du/vendor/google/marlin/proprietary'
+let g:netrw_dirhist_6='/mnt/nvme/du/.repo/manifests'
+let g:netrw_dirhist_7='/home/jertlok/.vim'
+let g:netrw_dirhist_8='/home/jertlok/.vim/colors'
+let g:netrw_dirhist_9='/home/jertlok/workspace/jertDofiles/.git'
