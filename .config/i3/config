@@ -1,3 +1,7 @@
+#----------------------------------------
+# General
+#----------------------------------------
+
 # Set metakey
 set $mod Mod4
 
@@ -8,9 +12,9 @@ font pango:Hack 9
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# --------
+#----------------------------------------
 # Beautify
-# --------
+#----------------------------------------
 
 # Wallpaper
 exec --no-startup-id feh --bg-scale $HOME/.config/i3/wallpaper.png
@@ -24,9 +28,9 @@ exec --no-startup-id compton -cbGfz -o 0.50 -t 2 -l 2 -r 5 -D 3 -i 0.93
 # Gaps
 gaps inner 8
 
-# -----------
+#----------------------------------------
 # Keybindings
-# -----------
+#----------------------------------------
 
 # start a terminal
 bindsym $mod+Return exec urxvt
@@ -38,7 +42,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+i exec --no-startup-id firefox
 
 # Start rofi
-bindsym $mod+d exec --no-startup-id rofi -show drun -modi drun -font "hack 12" -threads 12 -lines 16 -width 36
+bindsym $mod+d exec --no-startup-id rofi -show drun -modi drun -font "hack 12" -threads 12 -lines 12 -width 48
 
 # Urgent window focus
 bindysm $mod+Shift+u [urgent=latest] focus
