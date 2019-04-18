@@ -23,7 +23,7 @@ exec --no-startup-id feh --bg-scale $HOME/.config/i3/wallpaper.png
 exec--no-startup-id $HOME/.config/polybar/launch.sh
 
 # Compton (just to give it a try...)
-exec --no-startup-id compton -cbGfz -o 0.50 -t 2 -l 2 -r 5 -D 3 -i 0.93
+exec --no-startup-id compton -cCbGfz -o 0.50 -t 2 -l 2 -r 5 -D 3 -i 0.93
 
 # Gaps
 gaps inner 8

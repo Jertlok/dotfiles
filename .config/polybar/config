@@ -49,7 +49,7 @@ font-6 = "Weather Icons:pixelsize=12:style=Regular;1"
 modules-left =   i3
 modules-center =  xwindow
 ;modules-right =  pavolume  memory cpu temperature wlan mail eth battery  date tray-bug
-modules-right = memory cpu cpufreq temperature eth date
+modules-right = memory cpu temperature wlan date
 
 ;tray-position = right
 ;tray-padding = 2
@@ -382,8 +382,8 @@ format-prefix = " "
 
 [module/wlan]
 type = internal/network
-interface = wlp5s0
 interval = 3.0
+interface = wlp0s20f0u10
 
 format-connected = <ramp-signal> <label-connected>
 format-connected-prefix = " "
