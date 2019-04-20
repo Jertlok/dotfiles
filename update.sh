@@ -6,6 +6,7 @@
 # Copy main files
 cp ~/.Xresources .
 cp ~/.bashrc .
+cp ~/.dircolors .
 
 # Copy main folders
 cp -r ~/.Xresources.d/ .
