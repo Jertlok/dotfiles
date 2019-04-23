@@ -38,18 +38,17 @@ padding-right = 4
 module-margin-left = 2
 module-margin-right = 2
 
-font-0 = Fixed:pixelsize=12;1
-font-1 = Unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = Siji:pixelsize=12;1
-font-3 = "Font Awesome 5 Free:pixelsize=12:style=Regular;1"
-font-4 = "Font Awesome 5 Brands:pixelsize=12;1"
-font-5 = "Font Awesome 5 Free:pixelsize=12:style=Solid;1"
-font-6 = "Weather Icons:pixelsize=12:style=Regular;1"
+font-0 = "Fixed:pixelsize=11;1"
+font-1 = "Unifont Upper:fontformat=truetype:size=14:antialias=true;0"
+font-2 = "Siji:pixelsize=11:style=Regular;1"
+font-3 = "FontAwesome:pixelsize=11:style=Regular;1"
+font-4 = "Font Awesome 5 Free:pixelsize=12:style=Solid;1"
+font-5 = "Weather Icons:pixelsize=11:style=Regular;1"
 
 modules-left =   i3
 modules-center =  xwindow
 ;modules-right =  pavolume  memory cpu temperature wlan mail eth battery  date tray-bug
-modules-right = memory cpu temperature wlan date
+modules-right = memory wlan battery pulseaudio date tray-bug
 
 ;tray-position = right
 ;tray-padding = 2
@@ -63,7 +62,7 @@ modules-right = memory cpu temperature wlan date
 ;   left
 ;   center
 ;   right
-;tray-position = right
+tray-position = right
 
 ; If true, the bar will not shift its
 ; contents when the tray changes
@@ -383,7 +382,7 @@ format-prefix = " "
 [module/wlan]
 type = internal/network
 interval = 3.0
-interface = wlp0s20f0u10
+interface = wlp8s0
 
 format-connected = <ramp-signal> <label-connected>
 format-connected-prefix = " "
@@ -546,8 +545,8 @@ format-charging-prefix = " "
 format-discharging = <ramp-capacity> <label-discharging>
 ;format-discharging-underline = ${self.format-charging-underline}
 
-format-full-prefix = " "
-format-full-prefix-foreground = ${colors.foreground-alt}
+format-full-prefix = " "
+;format-full-prefix-foreground = ${colors.foreground-alt}
 ;format-full-underline = ${self.format-charging-underline}
 
 ramp-capacity-0 =  
@@ -579,7 +578,7 @@ thermal-zone = 0
 ; $ for i in /sys/class/hwmon/hwmon*/temp*_input; do echo "$(<$(dirname $i)/name): $(cat ${i%_*}_label 2>/dev/null || echo $(basename ${i%_*})) $(readlink -f $i)"; done
 ; to find path to desired file
 ; Default reverts to thermal zone setting
-hwmon-path = /sys/class/thermal/thermal_zone2/temp
+hwmon-path = /sys/class/thermal/thermal_zone0/temp
 
 ; Threshold temperature to display warning label (in degrees celsius)
 ; Default: 80

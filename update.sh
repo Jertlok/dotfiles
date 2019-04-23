@@ -14,3 +14,6 @@ cp -r ~/.config/rofi .config/
 cp -r ~/.config/i3 .config/
 cp -r ~/.config/polybar .config/
 cp -r ~/.vim .
+# GTK Themes
+cp -r ~/.themes .
+cp -r ~/.icons .

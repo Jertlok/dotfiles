@@ -32,17 +32,32 @@ gaps inner 8
 # Keybindings
 #----------------------------------------
 
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+
+# Sreen brightness controls
+bindsym XF86MonBrightnessUp exec xbacklight -inc 5 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 5 # decrease screen brightness
+
 # start a terminal
 bindsym $mod+Return exec urxvt
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
+# Start rofi
+bindsym $mod+d exec --no-startup-id rofi -show drun -modi drun -font "hack 12" -threads 12 -lines 12 -width 48
+
 # Start Firefox
 bindsym $mod+i exec --no-startup-id firefox
 
-# Start rofi
-bindsym $mod+d exec --no-startup-id rofi -show drun -modi drun -font "hack 12" -threads 12 -lines 12 -width 48
+# Start Telegram
+bindsym $mod+t exec --no-startup-id telegram-desktop
+
+# Start Sublime Text
+bindsym $mod+o exec --no-startup-id subl3
 
 # Urgent window focus
 bindysm $mod+Shift+u [urgent=latest] focus
@@ -220,3 +235,5 @@ for_window [class="URxvt"] focus
 for_window [class="Firefox"] focus
 for_window [class="Vlc"] focus
 for_window [class="feh"] focus
+for_window [class="Telegram"] focus
+for_window [class=Subl3] focus
